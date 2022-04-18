@@ -1,1 +1,0 @@
-{"version":3,"file":"GameState.js","sourceRoot":"./src/","sources":["scripts/GameState.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,SAAS;IAIlB,YAAY,UAAoB,EAAE,SAAiB;QAC/C,IAAI,CAAC,KAAK,GAAG,UAAU,CAAC;QACxB,IAAI,CAAC,cAAc,GAAG,SAAS,CAAC;IACpC,CAAC;CACJ"}

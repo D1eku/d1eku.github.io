@@ -1,4 +1,6 @@
-import { Game } from '../src/scripts/Game';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Game_1 = require("../src/scripts/Game");
 //Pinta cada celda que este viva.
 const paintLiveCells = () => {
     for (let i = 0; i < TILES_X; i++) {
@@ -65,7 +67,7 @@ let staticSpeed = 100;
 let speed = staticSpeed;
 console.log("Velocidad Inicio: ", speed);
 //Crea un nuevo juego.
-let testGame = new Game(40, 30);
+let testGame = new Game_1.Game(40, 30);
 drawBorders(); //Pinta los bordes.
 paintLiveCells(); //Pinta las celdas vivas.
 //Buttons Events
@@ -99,7 +101,7 @@ document.getElementById('restartGame').addEventListener('click', e => {
     let but = document.getElementById('stopbutton');
     but.innerHTML = '<i class="fas fa-play"></i>';
     isGamePaused = true;
-    testGame = new Game(40, 30);
+    testGame = new Game_1.Game(40, 30);
     drawAll();
 });
 //Random Game Button
@@ -225,4 +227,3 @@ document.getElementById('readCSV').addEventListener('click', e=> {
 
 
 */ 
-//# sourceMappingURL=main.js.map

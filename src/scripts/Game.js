@@ -1,6 +1,24 @@
-import { Cell } from '../scripts/Cell';
-import { GameState } from './GameState';
-export class Game {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Game = exports.GameState = exports.Cell = void 0;
+//import { Cell }  from '../scripts/Cell';
+//import { GameState } from './GameState';
+class Cell {
+    constructor(posX, posY) {
+        this.posX = posX;
+        this.posY = posY;
+        this.isLive = false;
+    }
+}
+exports.Cell = Cell;
+class GameState {
+    constructor(grillState, iteration) {
+        this.grill = grillState;
+        this.iterationLevel = iteration;
+    }
+}
+exports.GameState = GameState;
+class Game {
     constructor(sizeX, sizeY) {
         //Save state of before iterations.
         this.gameStates = Array(99999);
@@ -116,4 +134,4 @@ export class Game {
         this.grill = auxGrill;
     }
 }
-//# sourceMappingURL=Game.js.map
+exports.Game = Game;

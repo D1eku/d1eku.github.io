@@ -1,5 +1,27 @@
-import { Cell }  from '../scripts/Cell';
-import { GameState } from './GameState';
+//import { Cell }  from '../scripts/Cell';
+//import { GameState } from './GameState';
+export class Cell {
+    posX: number;
+    posY: number;
+    isLive: Boolean;
+
+    constructor(posX: number, posY: number){
+        this.posX = posX;
+        this.posY = posY;
+        this.isLive = false;
+    }
+}
+
+export class GameState{
+    grill: Cell[][];
+    iterationLevel: number;
+
+    constructor(grillState: Cell[][], iteration: number){
+        this.grill = grillState;
+        this.iterationLevel = iteration;
+    }
+}
+
 
 export class Game {
     grill: Cell[][];
